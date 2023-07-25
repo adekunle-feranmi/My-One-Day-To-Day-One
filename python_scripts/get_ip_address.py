@@ -7,7 +7,7 @@ def get_ip_address(domain):
     except socket.gaierror:
         return None
 
-website = "unilorin.edu.ng"
+website = input("Enter the website domain ")
 ip_address = get_ip_address(website)
 if ip_address:
     print(f"The IP address of {website} is {ip_address}.")
