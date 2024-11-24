@@ -22,7 +22,7 @@ interface = input("Enter the network interface (e.g., eth0, wlan0): ")
 
 # Enable IP forwarding
 os.system("echo 1 > /proc/sys/net/ipv4/ip_forward")
-print("IP forwarding enabled.")
+print("IP forwarding is now enabled.")
 
 # ARP Spoof function
 def arp_spoof(target_ip, spoof_ip):
